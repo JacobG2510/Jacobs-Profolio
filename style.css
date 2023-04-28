@@ -1,0 +1,107 @@
+:root {
+   --border-radius: 50px;
+   --white: #fff;
+   --dark-blue: #13293d;
+   --light-brown: #6b3226;
+}
+
+body {
+   font-size: 20px;
+   display: flex;
+   flex-direction:column;
+   min-height: 20px;
+   justify-content: flex-start;
+}
+
+h1 {
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+h2 {
+   font-size: 20px;
+   margin-bottom: 20px;
+   margin-top: 50px;
+}
+
+header {
+   text-align: center;
+   background-color: var(--dark-blue);
+   color: var(--white);
+   padding: 50px;
+}
+
+nav {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+nav a {
+   background-color: var(--light-brown);
+   padding: 15px 20px;
+   text-decoration: none;
+   text-align: center;
+}
+nav a:hover {
+   background-color: var(--white);
+   color: var(--dark-blue);
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+footer {
+   width: 100%;
+   bottom: 0;
+   padding: 20px;
+   text-align: center;
+   background: var(--dark-blue);
+   color: var(--white);
+   margin-top: auto;
+ }
+
+ .card {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: var(--border-radius);
+   padding: 10px;
+   flex: 0 0 300px;
+   transform: rotate(8deg);
+   box-shadow: 10px 10px 5px #aaaaaa;
+   margin: 20px;
+ }
+
+ .products {
+   flex: 1;
+   background-color: var(--white);
+   padding: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+
+ .card > header {
+   border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 20px;
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.card > img {
+   width: 100%;
+ }
+
+ .card > p {
+   text-align: center;
+ }
+
+ @media screen and (max-width: 1920px) {
+   main,
+   nav {
+     flex-direction:column;
+   }
+ }
+ 
+
