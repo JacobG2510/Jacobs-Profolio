@@ -24,6 +24,8 @@ h2 {
    margin-bottom: 20px;
    margin-top: 50px;
    align-items: center;
+   width: 100vw;
+   justify-content: center;
 }
 
 section p {
@@ -48,10 +50,14 @@ header img {
 nav {
    display: flex; 
    flex-wrap:wrap;
+   width: 100vw;
+   justify-content: center;
 }
 
 nav a {
+   flex: 1;
    background-color: var(--light-brown);
+   color:var(--white);
    padding: 15px 20px;
    text-decoration: none;
    text-align: center;
